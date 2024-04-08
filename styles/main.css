@@ -1,0 +1,882 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  padding: 0;
+  line-height: 1.5;
+  margin: 0;
+  font-weight: 400;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  font-size: 0.9em;
+  color: #555555;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 559.4px) {
+  .section {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  #introduction .headers .first {
+    padding-left: 4vw;
+    padding-right: 4vw;
+    padding-bottom: 1em;
+  }
+  #introduction .headers .first h1 {
+    font-size: 4em;
+  }
+  #introduction .headers .first h2 {
+    font-size: 1.5em;
+  }
+  #introduction .headers .first #menu {
+    padding-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #introduction .headers .first #menu ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    text-align: center;
+  }
+  #introduction .headers .first #menu ul li {
+    background-color: #ff9301;
+    margin: 0;
+    border-radius: 5px;
+    padding: 0;
+  }
+  #introduction .headers .first #menu ul li a {
+    padding: 0.5em 1em 0.5em 1em;
+    font-weight: 500;
+    color: black;
+    display: block;
+  }
+  #introduction .headers .first #menu ul li:hover {
+    background-color: #ffcc94;
+  }
+  #introduction .headers .first #menu ul li:hover a {
+    border: none;
+  }
+  #introduction .headers .second {
+    display: none;
+  }
+  #biography {
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+  #biography .first {
+    justify-content: center;
+  }
+  #biography .first img {
+    width: 200px;
+  }
+  #biography .second {
+    padding-left: none;
+  }
+  #what-I-do {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  #what-I-do .wavy {
+    left: 4vw;
+    right: 4vw;
+  }
+  #what-I-do .parts {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #awards {
+    padding-bottom: 1em;
+  }
+  #awards .parts {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #awards .parts .first, #awards .parts .second, #awards .parts .third {
+    justify-content: start;
+  }
+  #awards .parts .first div, #awards .parts .second div, #awards .parts .third div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #awards .parts .first div p, #awards .parts .second div p, #awards .parts .third div p {
+    padding-left: 1em;
+  }
+  #experience {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  #experience .parts .first, #experience .parts .second, #experience .parts .third {
+    padding: 1em;
+    grid-template-columns: 12fr;
+  }
+  #experience .parts .first > div:nth-child(1), #experience .parts .second > div:nth-child(1), #experience .parts .third > div:nth-child(1) {
+    border-right: none !important;
+  }
+  #experience .parts .first > div:nth-child(1) p, #experience .parts .second > div:nth-child(1) p, #experience .parts .third > div:nth-child(1) p {
+    padding-bottom: 2em;
+  }
+  #portfolio {
+    padding-bottom: 1em;
+  }
+  #portfolio .parts {
+    grid-template-columns: 12fr;
+  }
+  #contact {
+    padding-top: 0;
+    padding-bottom: 1em;
+  }
+  #contact .parts {
+    padding-top: 2em;
+    gap: 0;
+  }
+  #contact .parts .first {
+    grid-column: 1/span 2;
+  }
+  #contact .parts .first > div > p {
+    margin-bottom: -15px;
+  }
+  #contact .parts .second {
+    grid-column: 1/span 2;
+    padding-top: 2em;
+    padding-bottom: 1em;
+  }
+  #contact .parts .second .name-email {
+    grid-template-columns: 12fr;
+  }
+  #contact .parts .third {
+    grid-column: 1/span 2;
+    height: 250px;
+  }
+  footer {
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+  footer .parts {
+    grid-template-columns: 12fr;
+  }
+  footer .parts .first {
+    justify-content: center;
+  }
+  footer .parts .second {
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 560px) and (max-width: 959.4px) {
+  .section {
+    padding-left: 4vw;
+    padding-right: 4vw;
+  }
+  #introduction .headers {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #introduction .headers .first {
+    padding-left: 4vw;
+    padding-bottom: 2em;
+  }
+  #introduction .headers .first h1 {
+    font-size: 6em;
+  }
+  #introduction .headers .first h2 {
+    font-size: 2em;
+  }
+  #introduction .headers .first #menu {
+    padding-top: 2em;
+  }
+  #introduction .headers .first #menu ul li {
+    margin-right: 0.7vw;
+  }
+  #introduction .headers .first #menu ul li a {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    color: #555555;
+  }
+  #introduction .headers .first #menu ul li:hover a {
+    border-bottom: 3px solid #ff9301;
+  }
+  #introduction .headers .second {
+    display: none;
+  }
+  #biography {
+    grid-template-columns: repeat(1, 1fr);
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+  #biography .first {
+    justify-content: center;
+  }
+  #biography .first img {
+    width: 200px;
+  }
+  #biography .second {
+    padding-left: none;
+  }
+  #what-I-do {
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+  #what-I-do .wavy {
+    left: 4vw;
+    right: 4vw;
+  }
+  #what-I-do .parts {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #awards {
+    padding-bottom: 2em;
+  }
+  #awards .parts {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #awards .parts .first, #awards .parts .second, #awards .parts .third {
+    justify-content: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+  #experience {
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+  #experience .parts .first, #experience .parts .second, #experience .parts .third {
+    padding: 2em;
+    grid-template-columns: 3fr 9fr;
+  }
+  #experience .parts .first h5, #experience .parts .second h5, #experience .parts .third h5 {
+    display: grid;
+    grid-template-columns: 12fr;
+  }
+  #portfolio {
+    padding-bottom: 1em;
+  }
+  #portfolio .parts {
+    grid-template-columns: 6fr 6fr;
+  }
+  #contact {
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+  #contact .parts {
+    padding-top: 0;
+    gap: 2em;
+  }
+  #contact .parts .first {
+    grid-column: 1/span 2;
+    padding-top: 2em;
+  }
+  #contact .parts .second {
+    grid-column: 1/span 2;
+  }
+  #contact .parts .second .name-email {
+    grid-template-columns: 6fr 6fr;
+  }
+  #contact .parts .third {
+    grid-column: 1/span 2;
+    height: 250px;
+  }
+  footer {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+  }
+  footer .parts {
+    grid-template-columns: 6fr 6fr;
+  }
+  footer .parts .first {
+    justify-content: start;
+  }
+  footer .parts .second {
+    justify-content: end;
+  }
+}
+@media only screen and (min-width: 960px) and (max-width: 1199.4px) {
+  .section {
+    padding-left: 4vw;
+    padding-right: 4vw;
+  }
+  #introduction .headers {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #introduction .headers .first {
+    padding-left: 4vw;
+  }
+  #introduction .headers .first h1 {
+    font-size: 6em;
+  }
+  #introduction .headers .first h2 {
+    font-size: 2em;
+  }
+  #introduction .headers .first #menu {
+    padding-top: 2em;
+  }
+  #introduction .headers .first #menu ul li {
+    margin-right: 0.7vw;
+  }
+  #introduction .headers .first #menu ul li a {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    color: #555555;
+  }
+  #introduction .headers .first #menu ul li:hover a {
+    border-bottom: 3px solid #ff9301;
+  }
+  #introduction .headers .second {
+    display: flex;
+    justify-content: start;
+    align-items: end;
+  }
+  #biography {
+    grid-template-columns: 30% 1fr;
+    padding-top: 4em;
+    padding-bottom: 4em;
+  }
+  #biography .first {
+    justify-content: start;
+  }
+  #biography .first img {
+    width: 250px;
+  }
+  #biography .second {
+    padding-left: 4vw;
+  }
+  #what-I-do {
+    padding-top: 2em;
+    padding-bottom: 1em;
+  }
+  #what-I-do .wavy {
+    left: 4vw;
+    right: 4vw;
+  }
+  #what-I-do .parts {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #awards {
+    padding-bottom: 2em;
+  }
+  #awards .parts {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #awards .parts .first, #awards .parts .second, #awards .parts .third {
+    justify-content: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+  #experience {
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+  #experience .parts .first, #experience .parts .second, #experience .parts .third {
+    padding: 2em;
+    grid-template-columns: 3fr 9fr;
+  }
+  #portfolio {
+    padding-bottom: 2em;
+  }
+  #portfolio .parts {
+    grid-template-columns: 4fr 4fr 4fr;
+  }
+  #contact {
+    padding-top: 1em;
+    padding-bottom: 2em;
+  }
+  #contact .parts {
+    padding-top: 2em;
+    grid-template-columns: 6fr 6fr;
+    gap: 2em;
+  }
+  #contact .parts .first {
+    grid-column: 1/span 1;
+    padding-top: 2.5em;
+  }
+  #contact .parts .second {
+    grid-column: 2/span 1;
+    padding-bottom: 1em;
+  }
+  #contact .parts .second .name-email {
+    grid-template-columns: 6fr 6fr;
+  }
+  #contact .parts .third {
+    grid-column: 1/span 2;
+    height: 250px;
+  }
+  footer {
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+  footer .parts {
+    grid-template-columns: 6fr 6fr;
+  }
+  footer .parts .first {
+    justify-content: start;
+  }
+  footer .parts .second {
+    justify-content: end;
+  }
+}
+@media (min-width: 1200px) {
+  .section {
+    padding-left: 12vw;
+    padding-right: 12vw;
+  }
+  #introduction .headers {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #introduction .headers .first {
+    padding-left: 12vw;
+  }
+  #introduction .headers .first > div {
+    padding-bottom: 2em;
+  }
+  #introduction .headers .first h1 {
+    font-size: 6em;
+  }
+  #introduction .headers .first h2 {
+    font-size: 2em;
+  }
+  #introduction .headers .first #menu {
+    padding-top: 2em;
+  }
+  #introduction .headers .first #menu ul li {
+    margin-right: 0.7vw;
+  }
+  #introduction .headers .first #menu ul li a {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    color: #555555;
+  }
+  #introduction .headers .first #menu ul li:hover a {
+    border-bottom: 3px solid #ff9301;
+  }
+  #introduction .headers .second {
+    display: flex;
+    justify-content: start;
+    align-items: end;
+  }
+  #introduction .headers .second div {
+    margin-left: 2em;
+  }
+  #biography {
+    grid-template-columns: 25% 1fr;
+    padding-top: 4em;
+    padding-bottom: 4em;
+  }
+  #biography .first {
+    justify-content: start;
+  }
+  #biography .first img {
+    width: 250px;
+  }
+  #biography .second {
+    padding-left: 4vw;
+  }
+  #what-I-do {
+    padding-top: 4em;
+    padding-bottom: 2em;
+  }
+  #what-I-do .wavy {
+    left: 12vw;
+    right: 12vw;
+  }
+  #what-I-do .parts {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #awards {
+    padding-bottom: 2em;
+  }
+  #awards .parts {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #awards .parts .first, #awards .parts .second, #awards .parts .third {
+    justify-content: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+  #experience {
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+  #experience .parts .first, #experience .parts .second, #experience .parts .third {
+    padding: 2em;
+    grid-template-columns: 3fr 9fr;
+  }
+  #portfolio {
+    padding-bottom: 2em;
+  }
+  #portfolio .parts {
+    grid-template-columns: 4fr 4fr 4fr;
+  }
+  #contact {
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+  #contact .parts {
+    padding-top: 2em;
+    grid-template-columns: 6fr 6fr;
+    gap: 2em;
+  }
+  #contact .parts .first {
+    grid-column: 1/span 1;
+    padding-top: 2.5em;
+  }
+  #contact .parts .second {
+    grid-column: 2/span 1;
+    padding-bottom: 1em;
+  }
+  #contact .parts .second .name-email {
+    grid-template-columns: 6fr 6fr;
+  }
+  #contact .parts .third {
+    grid-column: 1/span 2;
+    height: 16vw;
+  }
+  footer {
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+  footer .parts {
+    grid-template-columns: 6fr 6fr;
+  }
+  footer .parts .first {
+    justify-content: start;
+  }
+  footer .parts .second {
+    justify-content: end;
+  }
+}
+.title {
+  position: relative;
+}
+.title ::before {
+  content: "";
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  margin-left: -8px;
+  margin-top: -4px;
+  z-index: -1;
+  background-color: #ffcc94;
+  border-radius: 100%;
+}
+.title h3 {
+  position: relative;
+  z-index: 1;
+  padding-top: 1em;
+  font-weight: 900;
+}
+
+body {
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  background-color: rgb(211, 211, 211);
+}
+body #introduction {
+  position: relative;
+  background-color: white;
+}
+body #introduction .headers {
+  margin: 0 auto;
+  display: grid;
+  gap: 0;
+}
+body #introduction .headers .first {
+  padding-top: 4vw;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+body #introduction .headers .first div h1 {
+  color: #0b0b15;
+  white-space: nowrap;
+  font-weight: 900;
+  line-height: 0.9;
+}
+body #introduction .headers .first div h2 {
+  color: #ff9301;
+  font-weight: 900;
+}
+body #introduction .headers .first div p:nth-child(4) {
+  padding-top: 1em;
+}
+body #introduction .headers .first div #menu ul {
+  list-style-type: none;
+  padding-top: 1em;
+}
+body #introduction .headers .first div #menu ul li {
+  display: inline;
+  font-size: 0.9em;
+}
+body #introduction .headers .first div #menu ul li a {
+  text-decoration: none;
+  white-space: nowrap;
+}
+body #introduction .headers .first div #menu ul li:last-child {
+  margin-right: 0;
+}
+body #introduction .headers .second {
+  position: relative;
+  padding-right: 4vw;
+  padding-left: 4vw;
+  background-color: #ffcc94;
+  align-items: end;
+  border-radius: 9% 0% 0% 22%/46% 0% 0% 90%;
+}
+body #introduction .headers .second div {
+  z-index: 999;
+  width: 400px;
+  height: 400px;
+  display: flex;
+  justify-content: end;
+}
+body #introduction .headers .second div img {
+  width: 90%;
+  height: auto;
+}
+body #biography {
+  display: grid;
+  width: 100%;
+  position: relative;
+  background-color: #f7f7ff;
+}
+body #biography .first {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+body #biography .first img {
+  border-radius: 100%;
+  background-color: #ff9301;
+}
+body #biography .first h2 {
+  color: black;
+  font-weight: 900;
+}
+body #biography .first h5 {
+  color: #ff9301;
+  font-weight: 500;
+}
+body #biography .second p {
+  padding-top: 1em;
+}
+body #what-I-do {
+  background-color: #f7f7ff;
+  position: relative;
+}
+body #what-I-do .wavy {
+  position: absolute;
+  top: 0;
+  height: 100px;
+  background-image: url("/podklady/border-dark.png");
+  background-repeat: repeat-x;
+  background-size: 100px;
+}
+body #what-I-do .title {
+  padding-bottom: 1em;
+}
+body #what-I-do .parts {
+  display: grid;
+  gap: 1em;
+}
+body #what-I-do .parts .first, body #what-I-do .parts .second, body #what-I-do .parts .third {
+  position: relative;
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+}
+body #what-I-do .parts .first .picture, body #what-I-do .parts .second .picture, body #what-I-do .parts .third .picture {
+  position: absolute;
+  left: -30px;
+  top: -50px;
+  background-color: #ff9301;
+  border-radius: 100%;
+  width: 160px;
+  height: 150px;
+}
+body #what-I-do .parts .first .picture img, body #what-I-do .parts .second .picture img, body #what-I-do .parts .third .picture img {
+  position: absolute;
+  right: 45px;
+  bottom: 25px;
+  width: 60px;
+}
+body #what-I-do .parts h4 {
+  padding-top: 120px;
+  padding-bottom: 1em;
+  padding-left: 1em;
+  font-weight: 900;
+}
+body #what-I-do .parts p {
+  padding-left: 1em;
+  padding-bottom: 2em;
+}
+body #awards {
+  background-color: #f7f7ff;
+}
+body #awards .parts {
+  display: grid;
+  gap: 1em;
+  padding-top: 1em;
+}
+body #awards .parts .first, body #awards .parts .second, body #awards .parts .third {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  border-radius: 15px;
+}
+body #awards .parts .first div, body #awards .parts .second div, body #awards .parts .third div {
+  padding: 1em;
+}
+body #awards .parts .first div img, body #awards .parts .second div img, body #awards .parts .third div img {
+  width: 50px;
+  height: auto;
+}
+body #experience {
+  background-color: white;
+}
+body #experience .parts {
+  display: grid;
+  grid-template-columns: 12fr;
+  gap: 1em;
+  padding-top: 1em;
+}
+body #experience .parts .first, body #experience .parts .second, body #experience .parts .third {
+  background-color: #f7f7ff;
+  border-radius: 15px;
+  display: grid;
+}
+body #experience .parts .first > div:nth-child(1), body #experience .parts .second > div:nth-child(1), body #experience .parts .third > div:nth-child(1) {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-right: 2em;
+  border-right: 1px solid #eeeeee;
+}
+body #experience .parts .first > div:nth-child(1) h5, body #experience .parts .second > div:nth-child(1) h5, body #experience .parts .third > div:nth-child(1) h5 {
+  color: #555555;
+  font-weight: 500;
+}
+body #experience .parts .first > div:nth-child(1) p, body #experience .parts .second > div:nth-child(1) p, body #experience .parts .third > div:nth-child(1) p {
+  color: white;
+}
+body #experience .parts .first > div:nth-child(1) p span, body #experience .parts .second > div:nth-child(1) p span, body #experience .parts .third > div:nth-child(1) p span {
+  padding: 0.5em;
+  font-size: 0.8em;
+  border-radius: 5px;
+  white-space: pre;
+}
+body #experience .parts .first > div:nth-child(1) p .full-time, body #experience .parts .second > div:nth-child(1) p .full-time, body #experience .parts .third > div:nth-child(1) p .full-time {
+  background-color: #ff9301;
+}
+body #experience .parts .first > div:nth-child(1) p .part-time, body #experience .parts .second > div:nth-child(1) p .part-time, body #experience .parts .third > div:nth-child(1) p .part-time {
+  background-color: #555555;
+}
+body #experience .parts .first > div:nth-child(2), body #experience .parts .second > div:nth-child(2), body #experience .parts .third > div:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body #experience .parts .first > div:nth-child(2) h4, body #experience .parts .second > div:nth-child(2) h4, body #experience .parts .third > div:nth-child(2) h4 {
+  padding-bottom: 1em;
+  color: black;
+  font-weight: 900;
+}
+body #experience .parts .first > div:nth-child(2) p, body #experience .parts .second > div:nth-child(2) p, body #experience .parts .third > div:nth-child(2) p {
+  font-weight: 500;
+}
+body #portfolio {
+  background-color: white;
+}
+body #portfolio .parts {
+  display: grid;
+  gap: 1em;
+  padding-top: 1em;
+}
+body #portfolio .parts .part img {
+  width: 100%;
+  height: auto;
+}
+body #portfolio .parts .part h4 {
+  font-weight: 900;
+}
+body #contact {
+  background-color: #f7f7ff;
+}
+body #contact .parts {
+  display: grid;
+}
+body #contact .parts .first > div h4 {
+  font-weight: 900;
+}
+body #contact .parts .first > div > p {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+body #contact .parts .first > div > div {
+  display: flex;
+  align-items: center;
+}
+body #contact .parts .first > div > div img {
+  width: 35px;
+  height: 35px;
+}
+body #contact .parts .first > div > div p {
+  padding-left: 1em;
+  color: black;
+  font-weight: 900;
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+body #contact .parts .second > div h4 {
+  font-weight: 900;
+}
+body #contact .parts .second > div form {
+  padding-top: 1em;
+}
+body #contact .parts .second > div form > div {
+  display: grid;
+  gap: 1em;
+}
+body #contact .parts .second > div form > div .name-email {
+  display: grid;
+  gap: 1em;
+}
+body #contact .parts .second > div form > div > input:last-child {
+  width: -moz-min-content;
+  width: min-content;
+  background-color: black;
+  border-radius: 5px;
+  color: white;
+  font-weight: 700;
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+}
+body #contact .parts .second > div form input, body #contact .parts .second > div form textarea {
+  padding: 1em;
+  border: 1px solid #bbbbbb;
+}
+body #contact .parts .third {
+  filter: grayscale(100%);
+  border: 2px solid white;
+}
+body #contact .parts .third iframe {
+  width: 100%;
+  height: 100%;
+}
+body footer {
+  background-color: white;
+  border-top: 1px solid #eeeeee;
+}
+body footer .parts {
+  display: grid;
+}
+body footer .parts > div {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}
+body footer .parts .first a img {
+  width: 35px;
+  height: auto;
+}/*# sourceMappingURL=main.css.map */
